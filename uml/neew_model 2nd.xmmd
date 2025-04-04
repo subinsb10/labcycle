@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.4">
+ <xmi:Documentation contact="www.metamill.com" exporter="Metamill" exporterVersion="8.2 (build 2022)" shortDescription="Metamill Model (neew_model)" notice="modified: 20250320-16:09:08"/>
+ <uml:Model xmi:type="uml:Model" xmi:id="mm:96c8b411-b257-4758-bf84-a8a0634d9b75" name="neew_model">
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:d6371663-a55f-49fd-94c8-361cedd0f275" name="UseCaseView" visibility="public">
+   <packagedElement xmi:type="uml:Actor" xmi:id="mm:06985158-524e-49e2-813f-3db78b8304b3" name="Member" visibility="public">
+    <ownedElement xmi:type="uml:Dependency" xmi:id="mm:afdac253-d00c-4ca4-81f1-78fdf446179f" visibility="public" supplier="mm:06985158-524e-49e2-813f-3db78b8304b3" client="mm:cd31a546-4e84-4648-8052-584470564e55"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="mm:61d63df7-9368-4037-afa5-163762eaf7d7" general="mm:97dd0597-c60d-4e58-9d31-39e1423785c9"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:dd2d6fce-f431-4a13-965e-821df6d70a00" visibility="public">
+     <memberEnd xmi:idref="mm:7fa74a32-c288-45c7-9a96-abca8ba78d94"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:7fa74a32-c288-45c7-9a96-abca8ba78d94" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:76b35a56-a595-48e5-a731-720f8b3f28ef"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:76b35a56-a595-48e5-a731-720f8b3f28ef" visibility="public" type="mm:c99605a1-551f-4b14-bde9-1c07392481f6"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:60eb21b8-1deb-4b90-a1c1-4e8ee3b77540" visibility="public">
+     <memberEnd xmi:idref="mm:2a4d70b6-7131-4761-9ec9-073322ccaf65"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:2a4d70b6-7131-4761-9ec9-073322ccaf65" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:6550b521-9d67-40d2-9f84-33f86ca77d62"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:6550b521-9d67-40d2-9f84-33f86ca77d62" visibility="public" type="mm:97dd0597-c60d-4e58-9d31-39e1423785c9"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:6f04afa2-911f-4b31-ae7a-46328a595e62" visibility="public">
+     <memberEnd xmi:idref="mm:b10c7a4f-2a22-48c4-b34c-91d67b78f1f5"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:b10c7a4f-2a22-48c4-b34c-91d67b78f1f5" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:a1a0fcce-bc3e-4e7b-ab3c-909fe1c7669d"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:a1a0fcce-bc3e-4e7b-ab3c-909fe1c7669d" visibility="public" type="mm:cd31a546-4e84-4648-8052-584470564e55"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:792fb208-6195-4327-bfa5-5583e61f102d" visibility="public">
+     <memberEnd xmi:idref="mm:1bdc3064-6c58-427b-b8ee-88c594048b60"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:1bdc3064-6c58-427b-b8ee-88c594048b60" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:efd45c0d-6c6e-488d-8e61-ace07e733355"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:efd45c0d-6c6e-488d-8e61-ace07e733355" visibility="public" type="mm:97dd0597-c60d-4e58-9d31-39e1423785c9"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:1f35508c-3ac6-4fd1-9f12-ebf2aec1b678" visibility="public">
+     <memberEnd xmi:idref="mm:91556a2c-7b8e-4d7b-aa51-70cfd45b7063"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:91556a2c-7b8e-4d7b-aa51-70cfd45b7063" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:7a8e2854-6452-408b-8153-a34097f5715b"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:7a8e2854-6452-408b-8153-a34097f5715b" visibility="public" type="mm:c99605a1-551f-4b14-bde9-1c07392481f6"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:d74eb636-ba46-4641-954a-ae9773104109" visibility="public">
+     <memberEnd xmi:idref="mm:e73023de-855d-4742-955f-17487d620dd2"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:e73023de-855d-4742-955f-17487d620dd2" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:7e37234f-ef5f-492c-bd05-e2fe17df506e"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:7e37234f-ef5f-492c-bd05-e2fe17df506e" visibility="public" type="mm:97dd0597-c60d-4e58-9d31-39e1423785c9"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:c54cebdb-72e6-4177-b179-77f581491a48" visibility="public">
+     <memberEnd xmi:idref="mm:91c347d2-e074-42d6-8756-c6dbd73e95be"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:91c347d2-e074-42d6-8756-c6dbd73e95be" visibility="public" type="mm:06985158-524e-49e2-813f-3db78b8304b3"/>
+     <memberEnd xmi:idref="mm:3a827e8c-4f38-46f5-ae61-eb2a031b77cd"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:3a827e8c-4f38-46f5-ae61-eb2a031b77cd" visibility="public" type="mm:97dd0597-c60d-4e58-9d31-39e1423785c9"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Node" xmi:id="mm:33340419-a7d2-4e5a-ba7d-7e8816b51423" name="NewNode" visibility="public"/>
+   <packagedElement xmi:type="uml:Activity" xmi:id="mm:14435092-4abb-425d-aa05-e49a48ff71a9" name="NewActivity" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:cd31a546-4e84-4648-8052-584470564e55" name="borrow books" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:c99605a1-551f-4b14-bde9-1c07392481f6" name="return books" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:97dd0597-c60d-4e58-9d31-39e1423785c9" name="pay fine" visibility="public"/>
+   <packagedElement xmi:type="uml:Actor" xmi:id="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0" name="librarian" visibility="public">
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:6e32138b-f212-4722-a87b-ed29cf5846ff" visibility="public">
+     <memberEnd xmi:idref="mm:27d72f44-ca2d-4661-8ffe-2d4e3a135d10"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:27d72f44-ca2d-4661-8ffe-2d4e3a135d10" visibility="public" type="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0"/>
+     <memberEnd xmi:idref="mm:85d60ddc-4728-449c-8ebe-df6074635281"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:85d60ddc-4728-449c-8ebe-df6074635281" visibility="public" type="mm:5615b661-0282-4edf-8758-c925fc8f7b33"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:65496bab-e662-4fc6-82ae-f19b9932a0ab" visibility="public">
+     <memberEnd xmi:idref="mm:5a17321c-4ee2-4c8d-834e-ce2a9429e250"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:5a17321c-4ee2-4c8d-834e-ce2a9429e250" visibility="public" type="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0"/>
+     <memberEnd xmi:idref="mm:e9a4b1e2-d69b-4abe-88ac-80ec480b032f"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:e9a4b1e2-d69b-4abe-88ac-80ec480b032f" visibility="public" type="mm:3c57f7b7-e1d4-4639-93f9-06e23ad3666f"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:bd084a5d-0b3a-4efe-a6e0-a6beb483f1c1" visibility="public">
+     <memberEnd xmi:idref="mm:724bc955-9dbd-4283-85c8-884aa3673ec1"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:724bc955-9dbd-4283-85c8-884aa3673ec1" visibility="public" type="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0"/>
+     <memberEnd xmi:idref="mm:ab69568a-63e9-417d-b3d9-e43fa4f43ff4"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:ab69568a-63e9-417d-b3d9-e43fa4f43ff4" visibility="public" type="mm:5615b661-0282-4edf-8758-c925fc8f7b33"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:1ed3e193-ddb7-4880-8857-ee8d64237d81" visibility="public">
+     <memberEnd xmi:idref="mm:1bfc4f7d-5872-431b-bca4-742c2e4e5426"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:1bfc4f7d-5872-431b-bca4-742c2e4e5426" visibility="public" type="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0"/>
+     <memberEnd xmi:idref="mm:ae1a7912-f249-4602-8e23-30c0a96dc551"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:ae1a7912-f249-4602-8e23-30c0a96dc551" visibility="public" type="mm:08b3c6bc-ee9b-4200-ad3c-c0af690ed5aa"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:5df69783-7bec-48ee-b01a-4111cee0cca9" visibility="public">
+     <memberEnd xmi:idref="mm:40c9a67d-faee-438a-8f4b-8d395f455f10"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:40c9a67d-faee-438a-8f4b-8d395f455f10" visibility="public" type="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0"/>
+     <memberEnd xmi:idref="mm:05c4bdcc-d3ab-4b27-b021-5bc9ff811044"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:05c4bdcc-d3ab-4b27-b021-5bc9ff811044" visibility="public" type="mm:dd7da527-ebd7-484f-a998-e4b9ccc9ec52"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:3c57f7b7-e1d4-4639-93f9-06e23ad3666f" name="manage Books" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:5615b661-0282-4edf-8758-c925fc8f7b33" name="Register new members" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:08b3c6bc-ee9b-4200-ad3c-c0af690ed5aa" name="fine calculations" visibility="public"/>
+   <packagedElement xmi:type="uml:UseCase" xmi:id="mm:dd7da527-ebd7-484f-a998-e4b9ccc9ec52" name="manage members" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:f5b4d659-d761-4d16-9091-46de8e16d4a5" name="class diagram" visibility="public">
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:a5767092-2faf-4cdb-9adf-df3868f50e86" name="User" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f1115234-c707-4603-af76-5dea4af809a7" name="userId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:c129c3b8-4258-4189-a9ac-cc3682fc071c" name="email" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:719008d8-6552-4287-934b-ff6978df550f" name="phone" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:ba6861dc-8e86-4cfe-9ff6-cb756d4f7add" name="name" visibility="public" aggregation="shared"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:d62ca1e6-9f85-4188-a019-d1b6836b6777" name="Librarian" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:21ae6114-308c-4699-a54a-43f70caea02a" name="employeId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:bf96863d-ec0a-4c60-9ad4-d25744bb8411" name="manageBooks()" visibility="public" aggregation="shared"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="mm:6a79a1d8-7e3b-4de8-8c77-c85ad08a054f" general="mm:a5767092-2faf-4cdb-9adf-df3868f50e86"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:9a1aceed-b98d-48ca-a5f4-97f556b7a7e3" visibility="public">
+     <memberEnd xmi:idref="mm:dd910baf-9298-481a-bae2-c7f18f1b38b1"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:dd910baf-9298-481a-bae2-c7f18f1b38b1" visibility="public" type="mm:d62ca1e6-9f85-4188-a019-d1b6836b6777"/>
+     <memberEnd xmi:idref="mm:6f89bf3e-d510-4a5f-a36b-426374d9c4d0"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:6f89bf3e-d510-4a5f-a36b-426374d9c4d0" visibility="public" type="mm:bf3d1aed-2be6-46d1-8b40-69d6446cbf28"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:d6a8ac91-0f16-472c-8cb9-254b46a4869c" visibility="public">
+     <memberEnd xmi:idref="mm:6c0bcdbd-a843-41bd-bf7f-b71c58cebe7c"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:6c0bcdbd-a843-41bd-bf7f-b71c58cebe7c" visibility="public" type="mm:d62ca1e6-9f85-4188-a019-d1b6836b6777"/>
+     <memberEnd xmi:idref="mm:24a10848-2961-43ca-9347-7ccf44c969df"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:24a10848-2961-43ca-9347-7ccf44c969df" visibility="public" type="mm:27d0e38f-7bee-4ce6-a7ec-5cfe6413cdc4"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:e770f05a-af7f-4c0d-b1a2-ca08af1623b6" name="Member" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:503f30fe-4ab4-4850-8080-6e123071b1dc" name="membershipId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:9410ad88-cfaa-4de0-a099-e57edff83579" name="borrowedBooks[]" visibility="public" aggregation="shared"/>
+    <ownedElement xmi:type="uml:Class" xmi:id="mm:27d0e38f-7bee-4ce6-a7ec-5cfe6413cdc4" name="Transaction" visibility="public">
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:86b3e392-ee1f-498c-8a31-a839b26fb361" name="transationId" visibility="public" aggregation="shared"/>
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b86740b3-a393-4608-848a-8463a806e8e3" name="memberId" visibility="public" aggregation="shared"/>
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:1732549b-98ce-49bc-8278-ba4f310e6a3c" name="bookId" visibility="public" aggregation="shared"/>
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:5c22f288-bbf0-4110-8ed0-9b8ff40bd487" name="issueDate" visibility="public" aggregation="shared"/>
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f8f1d57e-56af-4f86-8a22-71583ed6d6ad" name="returnDate" visibility="public" aggregation="shared"/>
+     <ownedAttribute xmi:type="uml:Property" xmi:id="mm:05a90c1a-0e1c-4f05-830f-9f829717cc43" name="calculationFine()" visibility="public" aggregation="shared"/>
+     <ownedElement xmi:type="uml:Association" xmi:id="mm:7146f14e-125b-4e57-a6aa-31dd106251a5" visibility="public">
+      <memberEnd xmi:idref="mm:eee4fb01-d19e-47ca-be22-a15d595769c6"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="mm:eee4fb01-d19e-47ca-be22-a15d595769c6" visibility="public" type="mm:27d0e38f-7bee-4ce6-a7ec-5cfe6413cdc4"/>
+      <memberEnd xmi:idref="mm:d9fa0661-e2f2-442a-b906-1a861539b1ee"/>
+      <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:d9fa0661-e2f2-442a-b906-1a861539b1ee" visibility="public" type="mm:bf3d1aed-2be6-46d1-8b40-69d6446cbf28"/>
+     </ownedElement>
+     <ownedElement xmi:type="uml:Association" xmi:id="mm:6e15e1ff-921b-4bf3-aa20-40157a9f6d91" visibility="public">
+      <memberEnd xmi:idref="mm:526e1dfe-33c6-45a3-ae38-f6a2df165833"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="mm:526e1dfe-33c6-45a3-ae38-f6a2df165833" visibility="public" type="mm:27d0e38f-7bee-4ce6-a7ec-5cfe6413cdc4"/>
+      <memberEnd xmi:idref="mm:a2eb6b17-7a76-4e7e-9c5a-de601868d1e5"/>
+      <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:a2eb6b17-7a76-4e7e-9c5a-de601868d1e5" visibility="public" type="mm:e770f05a-af7f-4c0d-b1a2-ca08af1623b6"/>
+     </ownedElement>
+    </ownedElement>
+    <generalization xmi:type="uml:Generalization" xmi:id="mm:8204f9c4-5c1b-48d3-a487-17a2be6f93ff" general="mm:a5767092-2faf-4cdb-9adf-df3868f50e86"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="mm:281ad663-a5e9-455a-80c4-621b522bc1fd" general="mm:a5767092-2faf-4cdb-9adf-df3868f50e86"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:243f4210-52c3-47c8-a47d-8ec23d649483" visibility="public">
+     <memberEnd xmi:idref="mm:39c56954-f5b2-476d-a33c-f1f4d549360e"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:39c56954-f5b2-476d-a33c-f1f4d549360e" visibility="public" type="mm:e770f05a-af7f-4c0d-b1a2-ca08af1623b6"/>
+     <memberEnd xmi:idref="mm:8076eb09-75b2-440b-978d-ddbea3335317"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:8076eb09-75b2-440b-978d-ddbea3335317" visibility="public" type="mm:03ad74af-76b5-4e2a-88f7-2d84fb5b980d"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:03ad74af-76b5-4e2a-88f7-2d84fb5b980d" name="Books" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:107f07ac-26bc-4b8b-83d2-2df4a9201aa0" name="BookId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b4e1b0a5-0504-40d4-a654-77e1643de335" name="titleId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:4e15768a-55b3-42cd-a3e6-ca86fef92ba0" name="author" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:aadc2278-6bb3-40f2-bf48-b11e7b9cafa8" name="ISBN" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:3a93891a-ba41-4c04-abd0-e614b15b32aa" name="isAvaliable" visibility="public" aggregation="shared"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:bf3d1aed-2be6-46d1-8b40-69d6446cbf28" name="Library" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:750ca43a-1652-42a3-95fc-7a6897a59713" name="name" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f5c47e01-7943-42b9-902d-23b5fc493893" name="address" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f1dd33c9-8a1b-48b8-8979-1923f68b35dd" name="books" visibility="public" aggregation="shared"/>
+   </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:2deffab1-a858-493f-a671-f58e7d604863" name="ImplView" visibility="public"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:95c54b4f-fdef-45d6-8d25-b885215e8128" name="library sequence diagram" visibility="public">
+   <ownedRule xmi:type="uml:Constraint" constrainedElement="mm:95c54b4f-fdef-45d6-8d25-b885215e8128">
+    <specification xmi:type="uml:OpaqueExpression" body="no_docgen"/>
+   </ownedRule>
+   <packagedElement xmi:type="uml:Collaboration" xmi:id="mm:c3dfbe5a-032b-4906-99c0-bd5e278dc30d" name="main">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="mm:b1a61b45-983b-47d4-aa2c-9abaf4fe3e99">
+     <ownedElement xmi:type="uml:InteractionUse" xmi:id="mm:faa574e6-9a6d-4029-8562-42d3a6d5e275"/>
+     <lifeline xmi:type="uml:Lifeline" xmi:id="mm:3c91b262-e630-45a8-9b8a-463723632a94" name="Member" visibility="public" represents="mm:9d772600-eceb-48a9-9954-18431c1c02cd"/>
+     <lifeline xmi:type="uml:Lifeline" xmi:id="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" name="Librarian" visibility="public" represents="mm:2d266964-6850-4893-a4c9-903cc78097a7"/>
+     <lifeline xmi:type="uml:Lifeline" xmi:id="mm:3db9a075-83b9-485a-b202-1990ff234b5d" name="Books" visibility="public" represents="mm:ec388cd0-0f43-4c2b-b341-d50599709374"/>
+     <lifeline xmi:type="uml:Lifeline" xmi:id="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde" name="Transtions" visibility="public" represents="mm:72e92cc8-153f-4fa6-b67a-03c8b042c0df"/>
+     <lifeline xmi:type="uml:Lifeline" xmi:id="mm:11b31711-734a-4d3b-9424-12ba3e6a942a" name="Fine" visibility="public" represents="mm:17765bb1-bd0d-491c-8600-3598bb785906"/>
+     <message xmi:type="uml:Message" xmi:id="mm:a45f0e6d-af03-48b9-8cc5-c3cf92040445" name="return book" visibility="public" messageKind="complete" sendEvent="mm:3c91b262-e630-45a8-9b8a-463723632a94" receiveEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701"/>
+     <message xmi:type="uml:Message" xmi:id="mm:c79b2c56-8933-4d2e-9f18-b97dc9abe218" name="identify return book" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:3db9a075-83b9-485a-b202-1990ff234b5d"/>
+     <message xmi:type="uml:Message" xmi:id="mm:58732338-9d0d-40ce-81de-223f5526af85" name="confirm book" visibility="public" messageKind="complete" sendEvent="mm:3db9a075-83b9-485a-b202-1990ff234b5d" receiveEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701"/>
+     <message xmi:type="uml:Message" xmi:id="mm:76f4a2d4-9639-4b59-b3cd-182c896328de" name="update transtions" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde"/>
+     <message xmi:type="uml:Message" xmi:id="mm:eec20698-9e13-47e3-8315-49e73face5a5" name="no fine" visibility="public" messageKind="complete" sendEvent="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde" receiveEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701"/>
+     <message xmi:type="uml:Message" xmi:id="mm:e0a99a04-6c96-46f1-a777-3772cf862d37" name="check return date" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde"/>
+     <message xmi:type="uml:Message" xmi:id="mm:13de5315-eba4-48dd-8f59-b8062ee5c1c3" name="status" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:3db9a075-83b9-485a-b202-1990ff234b5d"/>
+     <message xmi:type="uml:Message" xmi:id="mm:3e75240d-856a-4d34-a1a5-732366a62955" name="confirm return" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:3c91b262-e630-45a8-9b8a-463723632a94"/>
+     <message xmi:type="uml:Message" xmi:id="mm:056032c3-2bbf-47fc-8504-f9c5968aca33" name="calculate fine" visibility="public" messageKind="complete" sendEvent="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde" receiveEvent="mm:11b31711-734a-4d3b-9424-12ba3e6a942a"/>
+     <message xmi:type="uml:Message" xmi:id="mm:42e98c1d-986b-4e70-9209-40bef8097c60" name="fine amount" visibility="public" messageKind="complete" sendEvent="mm:11b31711-734a-4d3b-9424-12ba3e6a942a" receiveEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701"/>
+     <message xmi:type="uml:Message" xmi:id="mm:414c000b-c765-430c-86a1-2f5a67a91d11" name="request fine" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:3c91b262-e630-45a8-9b8a-463723632a94"/>
+     <message xmi:type="uml:Message" xmi:id="mm:09649f5e-4fcf-436a-a11e-34c91db64122" name="pay fine" visibility="public" messageKind="complete" sendEvent="mm:3c91b262-e630-45a8-9b8a-463723632a94" receiveEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701"/>
+     <message xmi:type="uml:Message" xmi:id="mm:a68e9319-179e-45f2-9a89-de43c3da04df" name="update fine" visibility="public" messageKind="complete" sendEvent="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" receiveEvent="mm:11b31711-734a-4d3b-9424-12ba3e6a942a"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:type="uml:Property" name="_type_" xmi:id="mm:9d772600-eceb-48a9-9954-18431c1c02cd"/>
+    <ownedAttribute xmi:type="uml:Property" name="_type_" xmi:id="mm:2d266964-6850-4893-a4c9-903cc78097a7"/>
+    <ownedAttribute xmi:type="uml:Property" name="_type_" xmi:id="mm:ec388cd0-0f43-4c2b-b341-d50599709374"/>
+    <ownedAttribute xmi:type="uml:Property" name="_type_" xmi:id="mm:72e92cc8-153f-4fa6-b67a-03c8b042c0df"/>
+    <ownedAttribute xmi:type="uml:Property" name="_type_" xmi:id="mm:17765bb1-bd0d-491c-8600-3598bb785906"/>
+   </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:65101a7e-d6f4-4fee-b37c-ee65a4680a12" name="NewClass1" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:9a1adbb6-4edf-4d39-9e1d-758600aeb744" name="Librarian" visibility="public">
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:00c98397-a555-4e77-a0eb-12f0f9844e4a" name="employeeId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:9de955b2-46be-4fc5-9585-7acb2e9db0f1" name="manageBooks()" visibility="public" aggregation="shared"/>
+   <generalization xmi:type="uml:Generalization" xmi:id="mm:ef760b89-5dbf-4545-88fc-2d971e0828fc" general="mm:4202cce8-5478-4d97-a4b2-1d1b7fd8b8a7"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b" name="Member" visibility="public">
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f0e53ac9-0739-4148-867d-63a8156c2786" name="membershipId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:904abe6c-91e4-44ff-b30b-ca7776e84b62" name="borrowedBooks[]" visibility="public" aggregation="shared"/>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:5a750582-2dda-4e19-88e8-6024083302ae" visibility="public">
+    <memberEnd xmi:idref="mm:2c5abd9a-cd7c-4de4-9d1a-85fe7b2d6e79"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:2c5abd9a-cd7c-4de4-9d1a-85fe7b2d6e79" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:efe7f240-b2dd-41c9-9dd9-a2f430b0aa78"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:efe7f240-b2dd-41c9-9dd9-a2f430b0aa78" visibility="public" type="mm:89fc72ab-782a-43fb-b789-00e93ff8c986"/>
+   </ownedElement>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:9f4fbca9-0322-436c-b572-8acde82cd113" visibility="public">
+    <memberEnd xmi:idref="mm:798bde9d-22a3-49ca-aad2-2616ec205e03"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:798bde9d-22a3-49ca-aad2-2616ec205e03" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:ef18605f-2ef2-44f9-979d-ed9cf6332ef0"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:ef18605f-2ef2-44f9-979d-ed9cf6332ef0" visibility="public" type="mm:5636aeb1-3b35-440c-a74b-cdb4e1057082"/>
+   </ownedElement>
+   <generalization xmi:type="uml:Generalization" xmi:id="mm:dab54ba9-7fd2-4b8a-b1c2-98c1403dae19" general="mm:4202cce8-5478-4d97-a4b2-1d1b7fd8b8a7"/>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:fe298cd5-a6b0-4000-a272-91a0a358d26a" visibility="public">
+    <memberEnd xmi:idref="mm:fd3aa011-2a48-4d49-ac5b-d5dd85a8eb40"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:fd3aa011-2a48-4d49-ac5b-d5dd85a8eb40" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:4cbdfe9d-acae-4637-8199-72fd7f9f44a9"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:4cbdfe9d-acae-4637-8199-72fd7f9f44a9" visibility="public" type="mm:89fc72ab-782a-43fb-b789-00e93ff8c986"/>
+   </ownedElement>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:8212f0b1-26fa-43bf-bd8c-61be9e2db5ee" visibility="public">
+    <memberEnd xmi:idref="mm:f11fa4df-bd95-468c-962a-84b849c5b73d"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:f11fa4df-bd95-468c-962a-84b849c5b73d" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:b8494329-24b2-4723-8901-f0442987b216"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:b8494329-24b2-4723-8901-f0442987b216" visibility="public" type="mm:89fc72ab-782a-43fb-b789-00e93ff8c986"/>
+   </ownedElement>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:a1647569-4a81-4a56-9a4f-500ddc1195bc" visibility="public">
+    <memberEnd xmi:idref="mm:5db31cf5-9d47-44cc-9374-6876e6fb3d2a"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:5db31cf5-9d47-44cc-9374-6876e6fb3d2a" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:3a0f6ad7-7f70-413b-8014-e49feed1b613"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:3a0f6ad7-7f70-413b-8014-e49feed1b613" visibility="public" type="mm:89fc72ab-782a-43fb-b789-00e93ff8c986"/>
+   </ownedElement>
+   <ownedElement xmi:type="uml:Association" xmi:id="mm:a67decc5-d1af-4660-b911-a26357e35fb9" visibility="public">
+    <memberEnd xmi:idref="mm:e5ebe55d-6ed1-479a-98aa-afa58871abbd"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="mm:e5ebe55d-6ed1-479a-98aa-afa58871abbd" visibility="public" type="mm:d9930cff-3354-4f55-aac0-18b4d5b3987b"/>
+    <memberEnd xmi:idref="mm:e965bcc3-f881-4d12-86df-6323c8d1533e"/>
+    <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:e965bcc3-f881-4d12-86df-6323c8d1533e" visibility="public" type="mm:89fc72ab-782a-43fb-b789-00e93ff8c986"/>
+   </ownedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:5636aeb1-3b35-440c-a74b-cdb4e1057082" name="Book" visibility="public">
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b72ed438-bcd6-4cd3-a63d-f0b1393e7acb" name="bookId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:c1a61493-52c0-4a5a-a810-e173189c354a" name="titleId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:0d13a1f6-923a-4a32-8fbf-7f6396e97fc0" name="author" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:47a37627-bd5b-45bf-8c3e-65d5504e65fe" name="ISBN" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:aedf2fc1-482b-47e9-997a-f7be32b8a201" name="isavaliable" visibility="public" aggregation="shared"/>
+   <ownedElement xmi:type="uml:Class" xmi:id="mm:4202cce8-5478-4d97-a4b2-1d1b7fd8b8a7" name="User" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:19beaf97-1210-4459-9feb-7ae3c0529974" name="userId" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:acbf82e5-185a-4404-b015-338c138c659f" name="email" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:446fc428-34fb-430f-ad84-86ab4227fae7" name="phone" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:cbb1e536-0ca2-4e65-97af-2b15dd053281" name="name" visibility="public" aggregation="shared"/>
+   </ownedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:89fc72ab-782a-43fb-b789-00e93ff8c986" name="Transaction" visibility="public">
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:c29418a1-63d7-418d-b41d-7fbbb4d606b9" name="transationId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:f01988af-c05d-4aaf-9f80-f75def4a8ede" name="memberId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:44415414-6130-452d-987d-d2053d75d65c" name="bookId" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:df14e71d-001d-4aca-8384-f9c5800e0310" name="issueDate" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:a45f0e6c-805d-45c8-ab95-c9b79fd08343" name="returnDate" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:acd21c1c-92a3-4cce-b11e-bc6fdba42657" name="calculateFine()" visibility="public" aggregation="shared"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:0284f060-b7ba-4b06-9f80-1550d8aa7d8f" name="NewClass" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="mm:5c918b92-2d27-4d2b-9e40-a9bae308da2a" name="Library" visibility="public">
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:6c6f0885-b688-4c28-a86c-3cff667f210f" name="name" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:af7c6c29-322e-4966-8f33-b2b59404e72f" name="address" visibility="public" aggregation="shared"/>
+   <ownedAttribute xmi:type="uml:Property" xmi:id="mm:c3e05a8b-3827-4e7a-88a2-48f0ba053c27" name="books[]" visibility="public" aggregation="shared"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="mm:8715449a-02b2-4990-83e7-dcba842dfeb1" name="NewInterface" visibility="public"/>
+  <packagedElement xmi:type="uml:Profile" xmi:id="mm:524b7673-5cd1-4d6c-8828-f4f12d619477" name="Metamill_profile"/>
+ </uml:Model>
+ <xmi:Extension extender="Metamill" extenderID="(build 2022)">
+  <profileContainer>
+   <metaElement xmi:idref="mm:06985158-524e-49e2-813f-3db78b8304b3" mstereo="actor"/>
+   <metaElement xmi:idref="mm:b86740b3-a393-4608-848a-8463a806e8e3" mtype="string"/>
+   <metaElement xmi:idref="mm:719008d8-6552-4287-934b-ff6978df550f" mtype="string"/>
+   <metaElement xmi:idref="mm:750ca43a-1652-42a3-95fc-7a6897a59713" mtype="string"/>
+   <metaElement xmi:idref="mm:f5c47e01-7943-42b9-902d-23b5fc493893" mtype="string"/>
+   <metaElement xmi:idref="mm:503f30fe-4ab4-4850-8080-6e123071b1dc" mtype="string"/>
+   <metaElement xmi:idref="mm:b4e1b0a5-0504-40d4-a654-77e1643de335" mtype="string"/>
+   <metaElement xmi:idref="mm:96c8b411-b257-4758-bf84-a8a0634d9b75">
+    <data tag="mpacksdir" value="${BASEMPACKSDIR}"/>
+    <data tag="sourcedir" value="${BASESOURCEDIR}"/>
+    <data tag="documsdir" value="${BASEDOCUMSDIR}"/>
+    <data tag="scriptdir" value="${BASESCRIPTDIR}"/>
+    <data tag="exportdir" value="${BASEEXPORTDIR}"/>
+    <data tag="imprules"/>
+    <data tag="cf_codelang" value="1"/>
+    <data tag="cf_genemark" value="1"/>
+    <data tag="cf_codeconf" value="suppcimp=true;hppext=.hpp;cppext=.cpp;hpppatt=(DIR)/(FILE).(EXT);cpppatt=(DIR)/(FILE).(EXT);visualc=false;cpp11=true;attrpfix=m_;getpfix=get_;setpfix=set_;listcpp=list&lt;*&gt;;listjava=Vector;listcs=List&lt;&gt;;listvb=List&lt;&gt;"/>
+    <data tag="cf_macros"/>
+    <data tag="cf_integralcode" value="0"/>
+    <data tag="__M_documentation" value="(EVALUATION VERSION)
+"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:05a90c1a-0e1c-4f05-830f-9f829717cc43" mtype="float"/>
+   <metaElement xmi:idref="mm:f1115234-c707-4603-af76-5dea4af809a7" mtype="string"/>
+   <metaElement xmi:idref="mm:21ae6114-308c-4699-a54a-43f70caea02a" mtype="string"/>
+   <metaElement xmi:idref="mm:c129c3b8-4258-4189-a9ac-cc3682fc071c" mtype="string"/>
+   <metaElement xmi:idref="mm:8715449a-02b2-4990-83e7-dcba842dfeb1" mstereo="interface"/>
+   <metaElement xmi:idref="mm:1732549b-98ce-49bc-8278-ba4f310e6a3c" mtype="string"/>
+   <metaElement xmi:idref="mm:d6371663-a55f-49fd-94c8-361cedd0f275">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:95c54b4f-fdef-45d6-8d25-b885215e8128">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:f1dd33c9-8a1b-48b8-8979-1923f68b35dd" mtype="int"/>
+   <metaElement xmi:idref="mm:5c22f288-bbf0-4110-8ed0-9b8ff40bd487" mtype="date"/>
+   <metaElement xmi:idref="mm:3a93891a-ba41-4c04-abd0-e614b15b32aa" mtype="boolean"/>
+   <metaElement xmi:idref="mm:2deffab1-a858-493f-a671-f58e7d604863">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:107f07ac-26bc-4b8b-83d2-2df4a9201aa0" mtype="string"/>
+   <metaElement xmi:idref="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0" mstereo="actor"/>
+   <metaElement xmi:idref="mm:f8f1d57e-56af-4f86-8a22-71583ed6d6ad" mtype="date"/>
+   <metaElement xmi:idref="mm:afdac253-d00c-4ca4-81f1-78fdf446179f" mstereo="extend"/>
+   <metaElement xmi:idref="mm:4e15768a-55b3-42cd-a3e6-ca86fef92ba0" mtype="string"/>
+   <metaElement xmi:idref="mm:aadc2278-6bb3-40f2-bf48-b11e7b9cafa8" mtype="string"/>
+   <metaElement xmi:idref="mm:ba6861dc-8e86-4cfe-9ff6-cb756d4f7add" mtype="string"/>
+  </profileContainer>
+  <visualContainer>
+   <diagram name="new" xmi:id="mm:24dbb244-efa7-45db-8079-bbc0905e6c8f" kind="Use Case Diagram" owner="mm:d6371663-a55f-49fd-94c8-361cedd0f275" geometry="width=800;height=1100" zoom="inZoom=100;outZoom=40;currZoom=100">
+    <elements>
+     <element vcode="VActor" xmi:id="mm:8755b5e9-eca9-499c-bab0-629cf1ce0860" metaid="mm:06985158-524e-49e2-813f-3db78b8304b3" geometry="x=51;y=158;width=34;height=47" order="3">
+      <data tag="name" value="Member"/>
+      <data tag="flags" value="iconmode=true;autosize=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:62c36048-38d0-4ecb-822a-dd0d32d465a2" metaid="mm:cd31a546-4e84-4648-8052-584470564e55" geometry="x=355;y=119;width=120;height=43" order="4">
+      <data tag="name" value="borrow books"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:94803d01-a143-4304-8cd2-b97a3f3b60f3" metaid="mm:c99605a1-551f-4b14-bde9-1c07392481f6" geometry="x=346;y=216;width=112;height=43" order="5">
+      <data tag="name" value="return books"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:86cf6ec2-e186-4cbd-b2ac-c91953a99a0f" metaid="mm:97dd0597-c60d-4e58-9d31-39e1423785c9" geometry="x=344;y=305;width=96;height=43" order="6">
+      <data tag="name" value="pay fine"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VActor" xmi:id="mm:22eadf0d-cd7a-4e88-96bc-78c656c8b094" metaid="mm:12dc8daf-ff96-4c66-b5e3-7681031fd1e0" geometry="x=58;y=602;width=34;height=47" order="10">
+      <data tag="name" value="librarian"/>
+      <data tag="flags" value="iconmode=true"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:3173d233-f368-497e-aada-510b3974d487" metaid="mm:3c57f7b7-e1d4-4639-93f9-06e23ad3666f" geometry="x=404;y=481;width=129;height=43" order="11">
+      <data tag="name" value="manage Books"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:7b1fb631-275a-47f3-afa1-bb6a1fe1ab4f" metaid="mm:5615b661-0282-4edf-8758-c925fc8f7b33" geometry="x=419;y=586;width=191;height=43" order="12">
+      <data tag="name" value="Register new members"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:7c7a9e62-7308-4bb3-9d74-a18c8b3b3fe7" metaid="mm:08b3c6bc-ee9b-4200-ad3c-c0af690ed5aa" geometry="x=415;y=679;width=141;height=43" order="13">
+      <data tag="name" value="fine calculations"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+     <element vcode="VUseCase" xmi:id="mm:b5926dd4-02dd-4574-9ce1-07458e468bd9" metaid="mm:dd7da527-ebd7-484f-a998-e4b9ccc9ec52" geometry="x=417;y=768;width=154;height=43" order="14">
+      <data tag="name" value="manage members"/>
+      <data tag="flags" value="iconmode=true;attrvisi=false;opervisi=false"/>
+     </element>
+    </elements>
+    <lines>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:4900627d-f188-496d-a7be-0ba1a272f441" metaid="mm:dd2d6fce-f431-4a13-965e-821df6d70a00" geometry="x=181;y=183" order="7">
+      <data tag="controlpoints" value="p0=(67.83,161.31);p1=(296.17,206.19)"/>
+      <data tag="sourceId" value="mm:8755b5e9-eca9-499c-bab0-629cf1ce0860"/>
+      <data tag="targetId" value="mm:94803d01-a143-4304-8cd2-b97a3f3b60f3"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:77350c21-8714-4498-a769-f8422112a21c" metaid="mm:6f04afa2-911f-4b31-ae7a-46328a595e62" geometry="x=183;y=141" order="8">
+      <data tag="controlpoints" value="p0=(67.93,155.83);p1=(298.54,126.26)"/>
+      <data tag="sourceId" value="mm:8755b5e9-eca9-499c-bab0-629cf1ce0860"/>
+      <data tag="targetId" value="mm:62c36048-38d0-4ecb-822a-dd0d32d465a2"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:31fce9fe-afe9-476f-b37a-494ea6cd6ab1" metaid="mm:c54cebdb-72e6-4177-b179-77f581491a48" geometry="x=191;y=225" order="9">
+      <data tag="controlpoints" value="p0=(67.42,164.10);p1=(199.00,213.00);p2=(316.32,287.44)"/>
+      <data tag="sourceId" value="mm:8755b5e9-eca9-499c-bab0-629cf1ce0860"/>
+      <data tag="targetId" value="mm:86cf6ec2-e186-4cbd-b2ac-c91953a99a0f"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:366d2107-8c0c-4a96-ab2c-6e3466cc6302" metaid="mm:65496bab-e662-4fc6-82ae-f19b9932a0ab" geometry="x=217;y=546" order="15">
+      <data tag="controlpoints" value="p0=(74.48,596.24);p1=(359.74,496.60)"/>
+      <data tag="sourceId" value="mm:22eadf0d-cd7a-4e88-96bc-78c656c8b094"/>
+      <data tag="targetId" value="mm:3173d233-f368-497e-aada-510b3974d487"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:9e49f9cb-67ff-4e5b-b2a3-2e6562aea5f9" metaid="mm:bd084a5d-0b3a-4efe-a6e0-a6beb483f1c1" geometry="x=200;y=595" order="16">
+      <data tag="controlpoints" value="p0=(74.99,601.25);p1=(325.30,590.16)"/>
+      <data tag="sourceId" value="mm:22eadf0d-cd7a-4e88-96bc-78c656c8b094"/>
+      <data tag="targetId" value="mm:7b1fb631-275a-47f3-afa1-bb6a1fe1ab4f"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:4ac27745-9fda-462a-92db-fd1909c54982" metaid="mm:1ed3e193-ddb7-4880-8857-ee8d64237d81" geometry="x=220;y=656" order="17">
+      <data tag="controlpoints" value="p0=(91.00,641.33);p1=(349.17,671.32)"/>
+      <data tag="sourceId" value="mm:22eadf0d-cd7a-4e88-96bc-78c656c8b094"/>
+      <data tag="targetId" value="mm:7c7a9e62-7308-4bb3-9d74-a18c8b3b3fe7"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:0565a7f9-449e-4e51-8ab6-f655f9da8216" metaid="mm:5df69783-7bec-48ee-b01a-4111cee0cca9" geometry="x=227;y=699" order="18">
+      <data tag="controlpoints" value="p0=(85.53,647.50);p1=(370.30,750.93)"/>
+      <data tag="sourceId" value="mm:22eadf0d-cd7a-4e88-96bc-78c656c8b094"/>
+      <data tag="targetId" value="mm:b5926dd4-02dd-4574-9ce1-07458e468bd9"/>
+     </line>
+    </lines>
+   </diagram>
+   <diagram name="Library Class diagram" xmi:id="mm:e6f6c792-8598-4449-a8a0-5611525742be" kind="Class Diagram" owner="mm:f5b4d659-d761-4d16-9091-46de8e16d4a5" geometry="width=1013;height=1100" zoom="inZoom=100;outZoom=40;currZoom=100">
+    <elements>
+     <element vcode="VClass" xmi:id="mm:fc5c1fb5-67a8-4132-bed9-d47858057aa9" metaid="mm:a5767092-2faf-4cdb-9adf-df3868f50e86" geometry="x=513;y=80;width=115;height=96" order="1">
+      <data tag="name" value="User"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:51a8a58f-1e7a-402c-b348-7437c7e239bd" metaid="mm:d62ca1e6-9f85-4188-a019-d1b6836b6777" geometry="x=887;y=285;width=139;height=64" order="2">
+      <data tag="name" value="Librarian"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:2fffad86-04d4-4403-a2ef-e1f154199732" metaid="mm:e770f05a-af7f-4c0d-b1a2-ca08af1623b6" geometry="x=168;y=265;width=161;height=64" order="3">
+      <data tag="name" value="Member"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:6f4ea7a6-cf0f-41a8-b332-d486a0049f05" metaid="mm:03ad74af-76b5-4e2a-88f7-2d84fb5b980d" geometry="x=531;y=366;width=154;height=112" order="4">
+      <data tag="name" value="Books"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:da00580f-bad4-46c8-ab53-55019d2ba509" metaid="mm:27d0e38f-7bee-4ce6-a7ec-5cfe6413cdc4" geometry="x=216;y=553;width=167;height=128" order="5">
+      <data tag="name" value="Transaction"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:7ab9f110-113b-471b-b301-5950913ec59a" metaid="mm:bf3d1aed-2be6-46d1-8b40-69d6446cbf28" geometry="x=882;y=555;width=126;height=80" order="6">
+      <data tag="name" value="Library"/>
+     </element>
+    </elements>
+    <lines>
+     <line vcode="VRelationship" rstype="RSGeneralization" xmi:id="mm:39e2f115-0a23-48ea-a6b2-5057cad268b6" metaid="mm:281ad663-a5e9-455a-80c4-621b522bc1fd" geometry="x=342;y=174" order="7">
+      <data tag="controlpoints" value="p0=(229.81,233.00);p1=(450.00,119.00);p2=(455.50,115.60)"/>
+      <data tag="sourceId" value="mm:2fffad86-04d4-4403-a2ef-e1f154199732"/>
+      <data tag="targetId" value="mm:fc5c1fb5-67a8-4132-bed9-d47858057aa9"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSGeneralization" xmi:id="mm:1a4dafc2-b253-4d8c-b985-ca12216693e7" metaid="mm:6a79a1d8-7e3b-4de8-8c77-c85ad08a054f" geometry="x=700;y=180" order="8">
+      <data tag="controlpoints" value="p0=(830.09,253.00);p1=(574.00,109.00);p2=(570.50,107.34)"/>
+      <data tag="sourceId" value="mm:51a8a58f-1e7a-402c-b348-7437c7e239bd"/>
+      <data tag="targetId" value="mm:fc5c1fb5-67a8-4132-bed9-d47858057aa9"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:eb84da12-dd7f-4174-88b0-bbde40778304" metaid="mm:243f4210-52c3-47c8-a47d-8ec23d649483" geometry="x=351;y=315" order="9">
+      <data tag="controlpoints" value="p0=(248.50,287.40);p1=(454.00,344.58)"/>
+      <data tag="sourceId" value="mm:2fffad86-04d4-4403-a2ef-e1f154199732"/>
+      <data tag="targetId" value="mm:6f4ea7a6-cf0f-41a8-b332-d486a0049f05"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:2b447f47-57f4-419f-9178-f90716e94f20" metaid="mm:9a1aceed-b98d-48ca-a5f4-97f556b7a7e3" geometry="x=884;y=416" order="10">
+      <data tag="controlpoints" value="p0=(886.41,317.00);p1=(882.74,515.00)"/>
+      <data tag="sourceId" value="mm:51a8a58f-1e7a-402c-b348-7437c7e239bd"/>
+      <data tag="targetId" value="mm:7ab9f110-113b-471b-b301-5950913ec59a"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:9fd79365-6f96-428d-a0de-8908295f3517" metaid="mm:7146f14e-125b-4e57-a6aa-31dd106251a5" geometry="x=559;y=554" order="11">
+      <data tag="controlpoints" value="p0=(299.50,553.25);p1=(819.00,554.81)"/>
+      <data tag="sourceId" value="mm:da00580f-bad4-46c8-ab53-55019d2ba509"/>
+      <data tag="targetId" value="mm:7ab9f110-113b-471b-b301-5950913ec59a"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:864686ef-3868-4cfc-a85c-f29fff1bdbf3" metaid="mm:6e15e1ff-921b-4bf3-aa20-40157a9f6d91" geometry="x=189;y=393" order="12">
+      <data tag="controlpoints" value="p0=(205.33,489.00);p1=(173.33,297.00)"/>
+      <data tag="sourceId" value="mm:da00580f-bad4-46c8-ab53-55019d2ba509"/>
+      <data tag="targetId" value="mm:2fffad86-04d4-4403-a2ef-e1f154199732"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:4afc5b14-fae2-4ea0-89d1-4168e962789a" metaid="mm:d6a8ac91-0f16-472c-8cb9-254b46a4869c" geometry="x=568;y=422" order="21">
+      <data tag="controlpoints" value="p0=(838.04,317.00);p1=(682.00,419.00);p2=(299.50,528.99)"/>
+      <data tag="sourceId" value="mm:51a8a58f-1e7a-402c-b348-7437c7e239bd"/>
+      <data tag="targetId" value="mm:da00580f-bad4-46c8-ab53-55019d2ba509"/>
+     </line>
+    </lines>
+   </diagram>
+   <diagram name="sequence" xmi:id="mm:2d6207b4-9c2a-43b1-956d-41b57ab8d527" kind="Sequence Diagram" owner="mm:c3dfbe5a-032b-4906-99c0-bd5e278dc30d" geometry="width=962;height=1100" zoom="inZoom=100;outZoom=40;currZoom=100">
+    <elements>
+     <element vcode="VObject" xmi:id="mm:e65b8531-14e4-492e-a515-d44b81615882" metaid="mm:3c91b262-e630-45a8-9b8a-463723632a94" geometry="x=148;y=104;width=69;height=43" order="6">
+      <data tag="name" value="Member"/>
+      <data tag="flags" value="attrvisi=false"/>
+      <data tag="lifelineon" value="true"/>
+      <data tag="lifelinelen" value="854"/>
+      <data tag="showclass" value="true"/>
+      <data tag="state"/>
+      <data tag="values"/>
+     </element>
+     <element vcode="VObject" xmi:id="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4" metaid="mm:b1f968f0-d4a2-4e5d-a4bc-2de4d4902701" geometry="x=315;y=106;width=74;height=43" order="7">
+      <data tag="name" value="Librarian"/>
+      <data tag="flags" value="attrvisi=false"/>
+      <data tag="lifelineon" value="true"/>
+      <data tag="lifelinelen" value="854"/>
+      <data tag="showclass" value="true"/>
+      <data tag="state"/>
+      <data tag="values"/>
+     </element>
+     <element vcode="VObject" xmi:id="mm:4c37d825-df27-4b7f-8635-2c083edf4636" metaid="mm:3db9a075-83b9-485a-b202-1990ff234b5d" geometry="x=498;y=107;width=54;height=43" order="8">
+      <data tag="name" value="Books"/>
+      <data tag="flags" value="attrvisi=false"/>
+      <data tag="lifelineon" value="true"/>
+      <data tag="lifelinelen" value="854"/>
+      <data tag="showclass" value="true"/>
+      <data tag="state"/>
+      <data tag="values"/>
+     </element>
+     <element vcode="VObject" xmi:id="mm:39e05d9a-f218-47ef-9d3f-4075d94c8a8a" metaid="mm:6e75b3b0-b6ce-4641-a388-f149764e3fde" geometry="x=702;y=104;width=81;height=43" order="9">
+      <data tag="name" value="Transtions"/>
+      <data tag="flags" value="attrvisi=false"/>
+      <data tag="lifelineon" value="true"/>
+      <data tag="lifelinelen" value="854"/>
+      <data tag="showclass" value="true"/>
+      <data tag="state"/>
+      <data tag="values"/>
+     </element>
+     <element vcode="VObject" xmi:id="mm:5188f5b0-fe4e-439f-be2b-53ba56000d1a" metaid="mm:11b31711-734a-4d3b-9424-12ba3e6a942a" geometry="x=889;y=101;width=46;height=43" order="10">
+      <data tag="name" value="Fine"/>
+      <data tag="flags" value="attrvisi=false"/>
+      <data tag="lifelineon" value="true"/>
+      <data tag="lifelinelen" value="854"/>
+      <data tag="showclass" value="true"/>
+      <data tag="state"/>
+      <data tag="values"/>
+     </element>
+    </elements>
+    <lines>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:c8bfc122-48ce-41ba-aa5c-7489c04445be" metaid="mm:a45f0e6d-af03-48b9-8cc5-c3cf92040445" geometry="x=231;y=195" order="11">
+      <data tag="controlpoints" value="p0=(148.00,195.00);p1=(315.00,195.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=195;yposto=195"/>
+      <data tag="sourceId" value="mm:e65b8531-14e4-492e-a515-d44b81615882"/>
+      <data tag="targetId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:8f6263f5-a79a-4d55-a3b6-57d7f72dada7" metaid="mm:c79b2c56-8933-4d2e-9f18-b97dc9abe218" geometry="x=406;y=240" order="12">
+      <data tag="controlpoints" value="p0=(315.00,240.00);p1=(498.00,240.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=240;yposto=240"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:4c37d825-df27-4b7f-8635-2c083edf4636"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:2f740c9b-c501-4e9c-88c4-f29ae6212418" metaid="mm:58732338-9d0d-40ce-81de-223f5526af85" geometry="x=406;y=279" order="13">
+      <data tag="controlpoints" value="p0=(498.00,279.00);p1=(315.00,279.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=279;yposto=279"/>
+      <data tag="sourceId" value="mm:4c37d825-df27-4b7f-8635-2c083edf4636"/>
+      <data tag="targetId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:9b41eb8c-3ab8-43a5-9273-873b22f91ab6" metaid="mm:76f4a2d4-9639-4b59-b3cd-182c896328de" geometry="x=508;y=336" order="14">
+      <data tag="controlpoints" value="p0=(315.00,336.00);p1=(702.00,336.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=336;yposto=336"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:39e05d9a-f218-47ef-9d3f-4075d94c8a8a"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:8a99d18d-7e7e-45f1-b776-1ce3023c64ff" metaid="mm:eec20698-9e13-47e3-8315-49e73face5a5" geometry="x=508;y=438" order="15">
+      <data tag="controlpoints" value="p0=(702.00,438.00);p1=(315.00,438.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=438;yposto=438"/>
+      <data tag="sourceId" value="mm:39e05d9a-f218-47ef-9d3f-4075d94c8a8a"/>
+      <data tag="targetId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:f2ee2d42-c107-4694-9426-c5cf09417594" metaid="mm:e0a99a04-6c96-46f1-a777-3772cf862d37" geometry="x=508;y=366" order="16">
+      <data tag="controlpoints" value="p0=(315.00,366.00);p1=(702.00,366.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=366;yposto=366"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:39e05d9a-f218-47ef-9d3f-4075d94c8a8a"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:ad3f8641-81b2-425b-93d4-dd9754438f8a" metaid="mm:13de5315-eba4-48dd-8f59-b8062ee5c1c3" geometry="x=406;y=511" order="17">
+      <data tag="controlpoints" value="p0=(315.00,511.00);p1=(498.00,511.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=511;yposto=511"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:4c37d825-df27-4b7f-8635-2c083edf4636"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:14eb5438-14f2-48a8-b9a8-69184f4accaa" metaid="mm:3e75240d-856a-4d34-a1a5-732366a62955" geometry="x=231;y=546" order="18">
+      <data tag="controlpoints" value="p0=(315.00,546.00);p1=(148.00,546.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=546;yposto=546"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:e65b8531-14e4-492e-a515-d44b81615882"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:106c7406-978f-443c-945a-1dd3b3ffa855" metaid="mm:056032c3-2bbf-47fc-8504-f9c5968aca33" geometry="x=795;y=584" order="19">
+      <data tag="controlpoints" value="p0=(702.00,584.00);p1=(889.00,584.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=584;yposto=584"/>
+      <data tag="sourceId" value="mm:39e05d9a-f218-47ef-9d3f-4075d94c8a8a"/>
+      <data tag="targetId" value="mm:5188f5b0-fe4e-439f-be2b-53ba56000d1a"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:b5940759-0a8a-4dcf-8570-081ad227e5a2" metaid="mm:42e98c1d-986b-4e70-9209-40bef8097c60" geometry="x=602;y=645" order="20">
+      <data tag="controlpoints" value="p0=(889.00,645.00);p1=(315.00,645.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=645;yposto=645"/>
+      <data tag="sourceId" value="mm:5188f5b0-fe4e-439f-be2b-53ba56000d1a"/>
+      <data tag="targetId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:a26bda0c-b315-497b-98c7-4cd99462fea5" metaid="mm:414c000b-c765-430c-86a1-2f5a67a91d11" geometry="x=231;y=710" order="21">
+      <data tag="controlpoints" value="p0=(315.00,710.00);p1=(148.00,710.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=710;yposto=710"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:e65b8531-14e4-492e-a515-d44b81615882"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:cf84dfb6-ab75-47ca-8419-ac6efa97d37d" metaid="mm:09649f5e-4fcf-436a-a11e-34c91db64122" geometry="x=231;y=771" order="22">
+      <data tag="controlpoints" value="p0=(148.00,771.00);p1=(315.00,771.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=771;yposto=771"/>
+      <data tag="sourceId" value="mm:e65b8531-14e4-492e-a515-d44b81615882"/>
+      <data tag="targetId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+     </line>
+     <line vcode="VMessage" rstype="RSMessage" xmi:id="mm:38866f36-bfb2-4353-a9ae-7cceaf746c35" metaid="mm:a68e9319-179e-45f2-9a89-de43c3da04df" geometry="x=602;y=857" order="23">
+      <data tag="controlpoints" value="p0=(315.00,857.00);p1=(889.00,857.00)"/>
+      <data tag="labels" value="p0=(0.00,-12.00);p1=(0.00,-12.00);p2=(0.00,-12.00);p3=(0.00,-12.00);p4=(0.00,-12.00);p5=(0.00,-12.00);p6=(0.00,-12.00)"/>
+      <data tag="synchtype" value="2"/>
+      <data tag="lfpos" value="yposfm=857;yposto=857"/>
+      <data tag="sourceId" value="mm:c1ca3e12-ede8-4181-bd7a-018cb0e039b4"/>
+      <data tag="targetId" value="mm:5188f5b0-fe4e-439f-be2b-53ba56000d1a"/>
+     </line>
+    </lines>
+   </diagram>
+  </visualContainer>
+ </xmi:Extension>
+</xmi:XMI>
