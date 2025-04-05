@@ -10,7 +10,7 @@ for x in games.find({},{"name":1, "_id":0, "genre":1}):
    print(x)
 
 
-
+k
 
 
 
