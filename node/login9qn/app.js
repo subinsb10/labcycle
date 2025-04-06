@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(path.resolve(),'public')))
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); 
+
 app.use('/',routes)
 
 app.use((req, res) => {

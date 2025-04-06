@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container flex justify-center items-center h-screen">
-        <div class="w-80 h-60 bg-blue-200 rounded-lg " >
+        <div class="w-80 h-60 bg-green-200 rounded-lg " >
            
             <form action="/user" method="post" class="m-4 flex flex-col justify-center">
                 <h1 class="text-center text-2xl font-bold">Login</h1>
@@ -20,4 +20,35 @@
         </div>
     </div>
 </body>
+
+<script>
+    const form = document.querySelector('form');
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      const formData = new FormData(form);
+      const email = formData.get('email');
+      const password = formData.get('password');
+  
+      const res = await fetch('/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+      });
+  
+      const data = await res.json();
+  
+      if (res.ok) {
+        localStorage.setItem('token', data.token);
+        alert("Login successful!");
+        window.location.href = '/dashboard';
+      } else {
+        alert(data.error || "Login failed.");
+      }
+    });
+  </script>
+  
 </html>

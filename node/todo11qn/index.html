@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple TODO App</title>
+  <!-- ✅ Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-3xl font-bold mb-6 text-blue-700">TODO List</h1>
+
+  <!-- Plus button to show input -->
+  <button id="addTodoBtn" onclick="showInput()" 
+    class="bg-blue-500 hover:bg-blue-600 text-white text-xl w-10 h-10 rounded-full mb-4 shadow">
+    +
+  </button>
+
+  <!-- Hidden input and Add button -->
+  <div id="todoInputBox" class="hidden mb-4 flex gap-2 items-center">
+    <input type="text" id="newTodo" placeholder="Add new todo" 
+      class="px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+    <button onclick="addTodo()" 
+      class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+      Add
+    </button>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="mb-4 flex gap-2">
+    <button onclick="loadTodos('all')" class="bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded">All</button>
+    <button onclick="loadTodos('pending')" class="bg-yellow-300 hover:bg-yellow-400 px-3 py-1 rounded">Pending</button>
+    <button onclick="loadTodos('completed')" class="bg-green-300 hover:bg-green-400 px-3 py-1 rounded">Completed</button>
+  </div>
+
+  <!-- Todo List -->
+  <ul id="todoList" class="w-full max-w-md"></ul>
+
+  <script>
+    function showInput() {
+      document.getElementById('todoInputBox').classList.remove('hidden');
+      document.getElementById('addTodoBtn').classList.add('hidden');
+      document.getElementById('newTodo').focus();
+    }
+
+    async function loadTodos(filter = 'all') {
+      const res = await fetch(`http://localhost:3000/todos?filter=${filter}`);
+      const todos = await res.json();
+      const list = document.getElementById('todoList');
+      list.innerHTML = '';
+      todos.forEach(todo => {
+        const li = document.createElement('li');
+        li.className = `flex justify-between items-center bg-white shadow p-3 mb-2 rounded ${todo.completed ? 'line-through text-gray-400' : ''}`;
+        li.innerHTML = `
+          <span>${todo.text}</span>
+          <div class="flex gap-2">
+            <button onclick="toggleTodo('${todo._id}')" class="text-green-500 hover:text-green-700">✓</button>
+            <button onclick="deleteTodo('${todo._id}')" class="text-red-500 hover:text-red-700">🗑</button>
+          </div>
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    async function addTodo() {
+      const text = document.getElementById('newTodo').value.trim();
+      if (!text) return;
+      await fetch('http://localhost:3000/todos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+      document.getElementById('newTodo').value = '';
+      loadTodos();
+    }
+
+    async function toggleTodo(id) {
+      await fetch(`http://localhost:3000/todos/${id}`, { method: 'PUT' });
+      loadTodos();
+    }
+
+    async function deleteTodo(id) {
+      await fetch(`http://localhost:3000/todos/${id}`, { method: 'DELETE' });
+      loadTodos();
+    }
+
+    loadTodos();
+  </script>
+</body>
+</html>
