@@ -1,71 +1,70 @@
 const mongoose = require('mongoose');
 
+async function main() {
+  try {
+    await mongoose.connect('mongodb://127.0.0.1:27017/salesdb');
+    console.log('MongoDB connected...');
 
-mongoose.connect('mongodb://127.0.0.1:27017/salesdb')
-  .then(() => console.log('MongoDB connected...'))
-  .catch(err => console.error('MongoDB connection error:', err));
+    const db = mongoose.connection;
+    const sales = db.collection('sales');
 
+    
+    await sales.insertMany([
+        {
+          store: "Store A",
+          product: "Laptop",
+          price: 1200,
+          quantity: 2,
+          date: new Date()
+        },
+        {
+          store: "Store A",
+          product: "Mouse",
+          price: 200,
+          quantity: 3,
+          date: new Date()
+        },
+        {
+          store: "Store B",
+          product: "Monitor",
+          price: 800,
+          quantity: 1,
+          date: new Date()
+        }
+      ]);
 
-const db = mongoose.connection;
-const sales = db.collection('sales');
+    const results = await sales.aggregate([
+      {
+        $addFields: {
+          month: { $dateToString: { format: "%Y-%m", date: "$date" } }
+        }
+      },
+      {
+        $group: {
+          _id: { store: "$store", month: "$month" },
+          totalRevenue: {
+            $sum: { $multiply: ["$price", "$quantity"] }
+          }
+        }
+      },
+      {
+        $project: {
+          _id: 0,
+          store: "$_id.store",
+          month: "$_id.month",
+          totalRevenue: 1
+        }
+      }
+    ]).toArray();
 
+    console.log("Monthly store revenue:");
+    console.log(JSON.stringify(results, null, 2));
 
+  } catch (err) {
+    console.error("Error:", err);
+  } finally {
+    await mongoose.disconnect();
+  }
+}
 
-
-// sales.insertMany([
-//   {
-//     store: "Store A",
-//     product: "Laptop",
-//     price: 1200,
-//     quantity: 2,
-//     date: new Date() 
-//   },
-//   {
-//     store: "Store A",
-//     product: "Mouse",
-//     price: 200,
-//     quantity: 3,
-//     date: new Date() 
-//   },
-//   {
-//     store: "Store B",
-//     product: "Monitor",
-//     price: 800,
-//     quantity: 1,
-//     date: new Date() 
-//   }
-// ])
-//   .then(result => {
-//     console.log('Documents inserted:', result);
-//   })
-//   .catch(err => {
-//     console.error('Error inserting documents:', err);
-//   });
-
-
-
-
-// Define the map function
-var mapFunction = function () {
-    var month = this.date.toISOString().substring(0, 7); // Format: "YYYY-MM"
-    var revenue = this.price * this.quantity;
-    emit({ store: this.store, month: month }, revenue);
-  };
-  
-  // Define the reduce function
-  var reduceFunction = function (key, values) {
-    return Array.sum(values);
-  };
-  
-  // Execute the mapReduce operation
-  db.sales.mapReduce(
-    mapFunction,
-    reduceFunction,
-    {
-      out: "monthly_store_revenue"
-    }
-  );
-  
-  // View results
-  db.monthly_store_revenue.find().pretty();
-  
+main();
