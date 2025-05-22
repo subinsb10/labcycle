@@ -9,29 +9,29 @@ async function main() {
     const sales = db.collection('sales');
 
     
-    await sales.insertMany([
-        {
-          store: "Store A",
-          product: "Laptop",
-          price: 1200,
-          quantity: 2,
-          date: new Date()
-        },
-        {
-          store: "Store A",
-          product: "Mouse",
-          price: 200,
-          quantity: 3,
-          date: new Date()
-        },
-        {
-          store: "Store B",
-          product: "Monitor",
-          price: 800,
-          quantity: 1,
-          date: new Date()
-        }
-      ]);
+    // await sales.insertMany([
+    //     {
+    //       store: "Store A",
+    //       product: "Laptop",
+    //       price: 1200,
+    //       quantity: 2,
+    //       date: new Date()
+    //     },
+    //     {
+    //       store: "Store A",
+    //       product: "Mouse",
+    //       price: 200,
+    //       quantity: 3,
+    //       date: new Date()
+    //     },
+    //       {
+    //     store: "Store B",
+    //       product: "Monitor",
+    //       price: 800,
+    //       quantity: 1,
+    //       date: new Date()
+    //     }
+    //   ]);
 
     const results = await sales.aggregate([
       {

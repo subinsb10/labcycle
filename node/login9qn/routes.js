@@ -9,7 +9,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/registration')
 
 const db = mongoose.connection
 const user = db.collection('user')
-
+ 
 route.get('/',(req,res)=>{
     try{
         res.sendFile('index.html',{root: './public'});
