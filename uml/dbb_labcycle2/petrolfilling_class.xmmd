@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.4">
+ <xmi:Documentation contact="www.metamill.com" exporter="Metamill" exporterVersion="8.2 (build 2022)" shortDescription="Metamill Model (petrolfilling_class)" notice="modified: 20250605-15:15:48"/>
+ <uml:Model xmi:type="uml:Model" xmi:id="mm:9f7931c3-ce65-4352-a072-0ce6b45c1dbf" name="petrolfilling_class">
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:a99dd600-9e97-4ef7-988d-14cf1ea24844" name="UseCaseView" visibility="public"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:e92bf5e1-8d41-44da-8527-45a4037d2706" name="DesignView" visibility="public">
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:9c6514f3-d752-4579-9a5b-516651875117" name="petrol pump" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:8b895547-91e8-4faa-b37a-5c9a4524af5d" name="id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b42035d0-1af9-4b7c-a860-a088297f4873" name="location" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b5df130c-843f-4ddf-8396-9a5f639becf1" name="fuel type" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:4cea803e-928a-4178-9b85-ad32ea480ddf" name="sellpetrol" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:fcf016fe-2b12-43ae-8763-43abfd7768e4" name="refillinventory" visibility="private"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7" name="supplier" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:23a102bb-52af-4d17-b3dc-2b4f7aa18a2e" name="id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b5f3f128-b7ea-4404-9aa7-0185c3cd149b" name="name" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:6346aded-aea1-4c44-8d18-9f7dba95fce9" name="location" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:45e4de86-7d71-43eb-8a06-d9e701f22be7" name="inventory" visibility="private" aggregation="shared"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:f82f97f1-c04b-4b50-a856-1f64eaff193e" visibility="public">
+     <memberEnd xmi:idref="mm:10b9b7e5-7999-4004-9479-5baaa1fbce95"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:10b9b7e5-7999-4004-9479-5baaa1fbce95" visibility="public" type="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+     <memberEnd xmi:idref="mm:1d698400-2061-4110-9790-3817a50053d6"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:1d698400-2061-4110-9790-3817a50053d6" visibility="public" type="mm:b295a6ec-e665-4e18-ab9a-d3e88682cbb0"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:c4a69e4e-ba32-4f40-aa6e-92a09ee4b9d3" visibility="public">
+     <memberEnd xmi:idref="mm:c97028be-c84e-4c91-94f2-4742efe27470"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:c97028be-c84e-4c91-94f2-4742efe27470" visibility="public" type="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+     <memberEnd xmi:idref="mm:72108bf7-57f3-4b06-ae99-09a2fcc8b190"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:72108bf7-57f3-4b06-ae99-09a2fcc8b190" visibility="public" type="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:b295a6ec-e665-4e18-ab9a-d3e88682cbb0" name="Transport" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:2054c106-16fc-4716-a58f-6c2e82dc83f0" name="id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:fec14621-22a4-47a5-8ce7-f88e2280d049" name="capacity" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:69dcb1d0-8fd8-412c-98bc-ed4d76b5547b" name="status" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:405ce11a-7f7c-4a0f-91b1-fc466f112560" name="transport petrol" visibility="public"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:a1eb114a-72b6-4f36-9ba3-adf0de3101be" visibility="public">
+     <memberEnd xmi:idref="mm:3af7fc13-598d-46c8-80bf-fad41c080898"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:3af7fc13-598d-46c8-80bf-fad41c080898" visibility="public" type="mm:b295a6ec-e665-4e18-ab9a-d3e88682cbb0"/>
+     <memberEnd xmi:idref="mm:5209fe81-43fd-47c0-a9cb-19cc969661be"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:5209fe81-43fd-47c0-a9cb-19cc969661be" visibility="public" type="mm:dc098d63-47a8-454d-a986-158998eee048"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:dc098d63-47a8-454d-a986-158998eee048" name="inventory" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:defb9b76-5fcf-498d-ab9d-e694b6d1c9a2" name="quantity" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:538ee076-40f7-45e5-b0fd-dfeeedffc8e3" name="fueltype" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:b6f416a4-be13-46bd-bd41-60cfa1108e18" name="update quantity" visibility="private"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:4d4a4803-d060-4f7d-90d2-fd201a83c60a" visibility="public">
+     <memberEnd xmi:idref="mm:365e71a0-6fa6-4273-a277-6508d7e5c9be"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:365e71a0-6fa6-4273-a277-6508d7e5c9be" visibility="public" type="mm:dc098d63-47a8-454d-a986-158998eee048"/>
+     <memberEnd xmi:idref="mm:0b5f5d67-2fec-4d46-8106-6a03763a539b"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:0b5f5d67-2fec-4d46-8106-6a03763a539b" visibility="public" type="mm:9c6514f3-d752-4579-9a5b-516651875117"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:2764df0b-4b9c-4f00-ad86-22dabc545416" name="oil production company" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:9231ed61-2da8-4ba4-be55-27a05e737b39" name="indian oil" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:5a281e2b-d424-4bfc-b79a-47211f2aeaa6" name="location" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:c6ab5cc4-bc31-494a-93f3-cfae07f0c24c" name="produce petrol" visibility="public"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:228f4f90-9225-4761-847e-72fbc972731a" name="Dealer" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:d7e72481-b441-4af4-8462-d1afcaea215b" name="dealer id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:5e5d8f43-73e0-45a3-b89f-468e8b51c7eb" name="location" visibility="public" aggregation="shared"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:dad66f38-b4cf-4972-9226-e93b7d6003d0" visibility="public">
+     <memberEnd xmi:idref="mm:b853021e-7fb2-4c88-9cdb-c37d3e0dc4c9"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:b853021e-7fb2-4c88-9cdb-c37d3e0dc4c9" visibility="public" type="mm:228f4f90-9225-4761-847e-72fbc972731a"/>
+     <memberEnd xmi:idref="mm:ff96da70-ca20-4f94-8dac-b791cc67b2ed"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:ff96da70-ca20-4f94-8dac-b791cc67b2ed" visibility="public" type="mm:2764df0b-4b9c-4f00-ad86-22dabc545416"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:178411e7-6b99-46dc-b317-1deb412f4517" visibility="public">
+     <memberEnd xmi:idref="mm:2e863890-cfdb-4641-8e9a-055c1524d698"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:2e863890-cfdb-4641-8e9a-055c1524d698" visibility="public" type="mm:228f4f90-9225-4761-847e-72fbc972731a"/>
+     <memberEnd xmi:idref="mm:a8815f1e-13bf-4577-aa61-c55219c3d6c8"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:a8815f1e-13bf-4577-aa61-c55219c3d6c8" visibility="public" type="mm:2764df0b-4b9c-4f00-ad86-22dabc545416"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:eb978db4-6d2a-4825-abba-a0cfcf6520e4" visibility="public">
+     <memberEnd xmi:idref="mm:6d3cdbb7-0f44-4fe0-9bf3-8be81741e41b"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:6d3cdbb7-0f44-4fe0-9bf3-8be81741e41b" visibility="public" type="mm:228f4f90-9225-4761-847e-72fbc972731a"/>
+     <memberEnd xmi:idref="mm:85b58f10-da73-4202-a41f-469cd40b2d3f"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:85b58f10-da73-4202-a41f-469cd40b2d3f" visibility="public" type="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:6072c2a7-310e-408b-9338-9093f4ab9a10" name="manager" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:84b9aa76-7300-4c1e-94f9-c759734fb9a6" name="manager id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:a382e4f7-c027-4036-af49-4847ee903967" name="manager name" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:76d90055-9e8b-4275-bdc6-318dac4887a2" name="manage inventory" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:5acedac5-3194-4a35-b6c4-20b1d7101097" name="manage staff" visibility="public"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:16fc9890-853f-4bb1-bc68-7fa621024802" visibility="public">
+     <memberEnd xmi:idref="mm:9d2ca1aa-633f-4b10-9fa3-dea3fd377205"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:9d2ca1aa-633f-4b10-9fa3-dea3fd377205" visibility="public" type="mm:6072c2a7-310e-408b-9338-9093f4ab9a10"/>
+     <memberEnd xmi:idref="mm:10a28fd4-a760-45b1-baa5-4fdf3cf132a3"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:10a28fd4-a760-45b1-baa5-4fdf3cf132a3" visibility="public" type="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:3449a87e-36d0-41ea-a0bd-5afbbeaa18a6" visibility="public">
+     <memberEnd xmi:idref="mm:645b9438-3193-4e4a-a537-73aa6b14d6a6"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:645b9438-3193-4e4a-a537-73aa6b14d6a6" visibility="public" type="mm:6072c2a7-310e-408b-9338-9093f4ab9a10"/>
+     <memberEnd xmi:idref="mm:89d2762f-8513-45d2-95da-b72db96c78de"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:89d2762f-8513-45d2-95da-b72db96c78de" visibility="public" type="mm:9c6514f3-d752-4579-9a5b-516651875117"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:9317dc2a-7dc1-4534-ba18-24fc7607509b" visibility="public">
+     <memberEnd xmi:idref="mm:9e147be1-1b1f-474b-b5c6-fe06e68b1146"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:9e147be1-1b1f-474b-b5c6-fe06e68b1146" visibility="public" type="mm:6072c2a7-310e-408b-9338-9093f4ab9a10"/>
+     <memberEnd xmi:idref="mm:47e15dd8-8811-4342-9276-db9d7a07f541"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:47e15dd8-8811-4342-9276-db9d7a07f541" visibility="public" type="mm:dc098d63-47a8-454d-a986-158998eee048"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Dependency" xmi:id="mm:738ed13b-7382-42f3-9495-30f535854eeb" visibility="public" supplier="mm:6072c2a7-310e-408b-9338-9093f4ab9a10" client="mm:d354d91b-2448-4783-b0b3-fc8d01d02ae7"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:877beafd-b11a-4f74-89e9-7207d5cafb09" visibility="public">
+     <memberEnd xmi:idref="mm:9be62e25-3fce-4980-962c-929a2d7e9cf6"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:9be62e25-3fce-4980-962c-929a2d7e9cf6" visibility="public" type="mm:6072c2a7-310e-408b-9338-9093f4ab9a10"/>
+     <memberEnd xmi:idref="mm:29aa5414-e203-429b-a58e-835c2a13f4cb"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:29aa5414-e203-429b-a58e-835c2a13f4cb" visibility="public" type="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Dependency" xmi:id="mm:511d5e3c-0bf8-40de-a4c1-3effe28d8c31" visibility="public" supplier="mm:6072c2a7-310e-408b-9338-9093f4ab9a10" client="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:73fee9bb-8606-4063-8d2f-bc1c1f1fd7b0" name="maintenance" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:d632d395-1e08-4bc9-84a2-c18a068d65ed" name="date" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:246ee09d-4592-4af5-b119-6408ddd5ed3e" name="description" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:0a4202b1-7291-46c1-a0e7-b7b403784a72" name="cost" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:e2eab6d0-c506-4d64-a07c-78a254b0574e" name="status" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:d44dc416-47c4-4d1b-9695-e04324780647" name="schedule" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:e311fde4-cc87-45ff-9e16-758e61ca3f0d" name="complete" visibility="public"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:3c62256d-edcc-4589-9c8b-96ec8cc2741c" visibility="public">
+     <memberEnd xmi:idref="mm:514a11a2-b1ca-49e8-b396-42edf3931b9e"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:514a11a2-b1ca-49e8-b396-42edf3931b9e" visibility="public" type="mm:73fee9bb-8606-4063-8d2f-bc1c1f1fd7b0"/>
+     <memberEnd xmi:idref="mm:6347e907-f3af-47c4-ade0-ac2a729bbef3"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:6347e907-f3af-47c4-ade0-ac2a729bbef3" visibility="public" type="mm:9c6514f3-d752-4579-9a5b-516651875117"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:087f4cea-7563-4d75-8648-7ff2cb3661f7" visibility="public">
+     <memberEnd xmi:idref="mm:c7224460-1d9e-4f19-8ac0-b3750e7a3281"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:c7224460-1d9e-4f19-8ac0-b3750e7a3281" visibility="public" type="mm:73fee9bb-8606-4063-8d2f-bc1c1f1fd7b0"/>
+     <memberEnd xmi:idref="mm:d9a2cceb-a3b0-41f3-9989-79e5a63c7662"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:d9a2cceb-a3b0-41f3-9989-79e5a63c7662" visibility="public" type="mm:dc098d63-47a8-454d-a986-158998eee048"/>
+    </ownedElement>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:d354d91b-2448-4783-b0b3-fc8d01d02ae7" name="payment" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:90bbada2-5657-4ce3-ad1c-03f52195767e" name="payment id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:b501a0ee-5bae-4dc1-b96d-7ddf627cc5ba" name="amount" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:68ac42fe-cce1-4e6f-b083-515d5414fb98" name="date" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:18d536bb-8032-4469-8c9d-6b793dbe3bcd" name="process payment" visibility="public"/>
+    <ownedElement xmi:type="uml:Dependency" xmi:id="mm:e43afe04-20af-4af2-ade3-ec9bcecf679b" visibility="public" supplier="mm:d354d91b-2448-4783-b0b3-fc8d01d02ae7" client="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+   </packagedElement>
+   <packagedElement xmi:type="uml:Class" xmi:id="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3" name="order" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:4984b0b0-61b0-48d7-9baf-fbbc9489b057" name="order id" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:904a53a9-e04c-40d2-9daa-e97089953851" name="quantity" visibility="public" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="mm:a399a7f0-8d4c-46c7-9b41-7aae99365fbf" name="date" visibility="public" aggregation="shared"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:82bed381-20b0-4b65-beda-0cc6d4733a9c" name="create order" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="mm:f8875a0f-267b-420a-a713-4de2d6a100ea" name="approve order" visibility="public"/>
+    <ownedElement xmi:type="uml:Association" xmi:id="mm:931e0524-a526-4f6d-bfb6-69b2a0e5dec4" visibility="public">
+     <memberEnd xmi:idref="mm:d4eff6a2-185e-47c4-a4c2-f88738644152"/>
+     <ownedEnd xmi:type="uml:Property" xmi:id="mm:d4eff6a2-185e-47c4-a4c2-f88738644152" visibility="public" type="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3"/>
+     <memberEnd xmi:idref="mm:57029170-2019-45bd-bb38-b506a12b0fa9"/>
+     <navigableOwnedEnd xmi:type="uml:Property" xmi:id="mm:57029170-2019-45bd-bb38-b506a12b0fa9" visibility="public" type="mm:d354d91b-2448-4783-b0b3-fc8d01d02ae7"/>
+    </ownedElement>
+    <ownedElement xmi:type="uml:Dependency" xmi:id="mm:d1b9d3c3-dbf9-4a0b-8ad2-73df64c2cabe" visibility="public" supplier="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3" client="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7"/>
+   </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:c3d100cd-268b-4a3d-b586-3f6a6222e4d7" name="ImplView" visibility="public"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="mm:1c5374f7-aa22-40af-b1c9-74172f0867d4" name="ProfileView" visibility="public">
+   <ownedRule xmi:type="uml:Constraint" constrainedElement="mm:1c5374f7-aa22-40af-b1c9-74172f0867d4">
+    <specification xmi:type="uml:OpaqueExpression" body="no_docgen"/>
+   </ownedRule>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Profile" xmi:id="mm:3c286e1d-3bc9-43a5-b4f6-bb4f284e8cae" name="Metamill_profile"/>
+ </uml:Model>
+ <xmi:Extension extender="Metamill" extenderID="(build 2022)">
+  <profileContainer>
+   <metaElement xmi:idref="mm:1c5374f7-aa22-40af-b1c9-74172f0867d4">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:a99dd600-9e97-4ef7-988d-14cf1ea24844">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:c3d100cd-268b-4a3d-b586-3f6a6222e4d7">
+    <data tag="__M_generate" value="false"/>
+   </metaElement>
+   <metaElement xmi:idref="mm:9f7931c3-ce65-4352-a072-0ce6b45c1dbf">
+    <data tag="cf_codelang" value="1"/>
+    <data tag="cf_genemark" value="1"/>
+    <data tag="mpacksdir" value="${BASEMPACKSDIR}"/>
+    <data tag="sourcedir" value="${BASESOURCEDIR}"/>
+    <data tag="documsdir" value="${BASEDOCUMSDIR}"/>
+    <data tag="scriptdir" value="${BASESCRIPTDIR}"/>
+    <data tag="exportdir" value="${BASEEXPORTDIR}"/>
+    <data tag="imprules"/>
+    <data tag="cf_codeconf" value="suppcimp=true;hppext=.hpp;cppext=.cpp;hpppatt=(DIR)/(FILE).(EXT);cpppatt=(DIR)/(FILE).(EXT);visualc=false;cpp11=true;attrpfix=m_;getpfix=get_;setpfix=set_;listcpp=list&lt;*&gt;;listjava=Vector;listcs=List&lt;&gt;;listvb=List&lt;&gt;"/>
+    <data tag="cf_macros"/>
+    <data tag="cf_integralcode" value="0"/>
+    <data tag="__M_documentation" value="(EVALUATION VERSION)
+"/>
+   </metaElement>
+  </profileContainer>
+  <visualContainer>
+   <diagram name="petrolfilling" xmi:id="mm:1dceabd7-6733-4b81-960a-2a3aecbfe20a" kind="Class Diagram" owner="mm:e92bf5e1-8d41-44da-8527-45a4037d2706" geometry="width=878;height=1100" zoom="inZoom=100;outZoom=40;currZoom=100">
+    <elements>
+     <element vcode="VClass" xmi:id="mm:5487d55d-b37e-4ee0-8098-9e72a9fef5a5" metaid="mm:9c6514f3-d752-4579-9a5b-516651875117" geometry="x=771;y=447;width=114;height=109" order="1">
+      <data tag="name" value="petrol pump"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d" metaid="mm:ff7f9996-4a18-48c7-9735-58b1c561dee7" geometry="x=322;y=447;width=83;height=96" order="2">
+      <data tag="name" value="supplier"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:cbd47623-951a-4c6a-8c1b-2c6bca3af36a" metaid="mm:b295a6ec-e665-4e18-ab9a-d3e88682cbb0" geometry="x=320;y=262;width=131;height=93" order="3">
+      <data tag="name" value="Transport"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:0192c057-c3bd-42d6-aae0-2a2e407990cf" metaid="mm:dc098d63-47a8-454d-a986-158998eee048" geometry="x=497;y=262;width=129;height=77" order="4">
+      <data tag="name" value="inventory"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:57af2fcd-a8ed-4ca2-88f5-1bc27ad4075e" metaid="mm:2764df0b-4b9c-4f00-ad86-22dabc545416" geometry="x=138;y=629;width=166;height=77" order="5">
+      <data tag="name" value="oil production company"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:8868cff3-cd90-4716-b8cc-46d7ac396913" metaid="mm:228f4f90-9225-4761-847e-72fbc972731a" geometry="x=137;y=447;width=85;height=64" order="6">
+      <data tag="name" value="Dealer"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:5a8a2e06-a5ad-4523-b490-d8cd4d7e8b43" metaid="mm:6072c2a7-310e-408b-9338-9093f4ab9a10" geometry="x=498;y=447;width=145;height=93" order="7">
+      <data tag="name" value="manager"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:37525d6b-d8f2-493d-939b-0b275195204a" metaid="mm:73fee9bb-8606-4063-8d2f-bc1c1f1fd7b0" geometry="x=771;y=258;width=99;height=125" order="8">
+      <data tag="name" value="maintenance"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:c23264ca-e9db-45a3-96a7-4b2965de2bc5" metaid="mm:d354d91b-2448-4783-b0b3-fc8d01d02ae7" geometry="x=324;y=624;width=144;height=93" order="9">
+      <data tag="name" value="payment"/>
+     </element>
+     <element vcode="VClass" xmi:id="mm:4866d8b1-8cf7-48f5-8183-a644bde6ebfc" metaid="mm:c626cf6b-f6c6-4f25-97e9-e04907933be3" geometry="x=498;y=626;width=121;height=109" order="19">
+      <data tag="name" value="order"/>
+     </element>
+    </elements>
+    <lines>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:8a915697-6556-4cc0-b141-3cc1571363aa" metaid="mm:178411e7-6b99-46dc-b317-1deb412f4517" geometry="x=137;y=534" order="10">
+      <data tag="controlpoints" value="p0=(137.68,479.00);p1=(138.29,590.50)"/>
+      <data tag="sourceId" value="mm:8868cff3-cd90-4716-b8cc-46d7ac396913"/>
+      <data tag="targetId" value="mm:57af2fcd-a8ed-4ca2-88f5-1bc27ad4075e"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:0d63c63e-7e85-43f2-a29c-c7452532c736" metaid="mm:eb978db4-6d2a-4825-abba-a0cfcf6520e4" geometry="x=230;y=447" order="11">
+      <data tag="controlpoints" value="p0=(180.00,447.00);p1=(281.00,447.00)"/>
+      <data tag="sourceId" value="mm:8868cff3-cd90-4716-b8cc-46d7ac396913"/>
+      <data tag="targetId" value="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:c4ee0108-d9d2-46af-a6d8-25ae1a1f8e49" metaid="mm:f82f97f1-c04b-4b50-a856-1f64eaff193e" geometry="x=321;y=353" order="12">
+      <data tag="controlpoints" value="p0=(321.98,399.00);p1=(321.00,308.50)"/>
+      <data tag="sourceId" value="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d"/>
+      <data tag="targetId" value="mm:cbd47623-951a-4c6a-8c1b-2c6bca3af36a"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:b571b6e2-3f93-46d1-bf99-4b734f541e1d" metaid="mm:16fc9890-853f-4bb1-bc68-7fa621024802" geometry="x=395;y=446" order="13">
+      <data tag="controlpoints" value="p0=(426.00,447.00);p1=(364.00,447.00)"/>
+      <data tag="sourceId" value="mm:5a8a2e06-a5ad-4523-b490-d8cd4d7e8b43"/>
+      <data tag="targetId" value="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:19e8b994-1f89-4d9f-839e-4c2d455d312a" metaid="mm:3449a87e-36d0-41ea-a0bd-5afbbeaa18a6" geometry="x=642;y=446" order="14">
+      <data tag="controlpoints" value="p0=(571.00,447.00);p1=(714.50,447.00)"/>
+      <data tag="sourceId" value="mm:5a8a2e06-a5ad-4523-b490-d8cd4d7e8b43"/>
+      <data tag="targetId" value="mm:5487d55d-b37e-4ee0-8098-9e72a9fef5a5"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:5e497da1-75ab-4ac7-a15d-d8445d4102ab" metaid="mm:9317dc2a-7dc1-4534-ba18-24fc7607509b" geometry="x=497;y=350" order="15">
+      <data tag="controlpoints" value="p0=(498.25,400.50);p1=(497.71,300.50)"/>
+      <data tag="sourceId" value="mm:5a8a2e06-a5ad-4523-b490-d8cd4d7e8b43"/>
+      <data tag="targetId" value="mm:0192c057-c3bd-42d6-aae0-2a2e407990cf"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSDependency" xmi:id="mm:4f36c862-5ac6-4682-b123-46283f568d0a" metaid="mm:e43afe04-20af-4af2-ade3-ec9bcecf679b" geometry="x=323;y=536" order="16">
+      <data tag="controlpoints" value="p0=(323.97,577.50);p1=(323.04,495.00)"/>
+      <data tag="sourceId" value="mm:c23264ca-e9db-45a3-96a7-4b2965de2bc5"/>
+      <data tag="targetId" value="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:95339d7b-3d0e-4b7a-b0b2-e2252665bec7" metaid="mm:3c62256d-edcc-4589-9c8b-96ec8cc2741c" geometry="x=771;y=356" order="17">
+      <data tag="controlpoints" value="p0=(771.50,320.50);p1=(771.50,392.50)"/>
+      <data tag="sourceId" value="mm:37525d6b-d8f2-493d-939b-0b275195204a"/>
+      <data tag="targetId" value="mm:5487d55d-b37e-4ee0-8098-9e72a9fef5a5"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:3fe3e77b-5e46-4313-85cc-e9c41c663102" metaid="mm:087f4cea-7563-4d75-8648-7ff2cb3661f7" geometry="x=642;y=259" order="18">
+      <data tag="controlpoints" value="p0=(722.00,258.72);p1=(562.00,261.06)"/>
+      <data tag="sourceId" value="mm:37525d6b-d8f2-493d-939b-0b275195204a"/>
+      <data tag="targetId" value="mm:0192c057-c3bd-42d6-aae0-2a2e407990cf"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:4ace6058-100a-45e5-a79f-4f51012989f1" metaid="mm:931e0524-a526-4f6d-bfb6-69b2a0e5dec4" geometry="x=417;y=625" order="20">
+      <data tag="controlpoints" value="p0=(438.00,625.30);p1=(396.50,624.83)"/>
+      <data tag="sourceId" value="mm:4866d8b1-8cf7-48f5-8183-a644bde6ebfc"/>
+      <data tag="targetId" value="mm:c23264ca-e9db-45a3-96a7-4b2965de2bc5"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSDependency" xmi:id="mm:64c73f30-03a9-433b-8507-84c612f59762" metaid="mm:511d5e3c-0bf8-40de-a4c1-3effe28d8c31" geometry="x=498;y=532" order="21">
+      <data tag="controlpoints" value="p0=(498.50,493.50);p1=(498.50,571.50)"/>
+      <data tag="sourceId" value="mm:5a8a2e06-a5ad-4523-b490-d8cd4d7e8b43"/>
+      <data tag="targetId" value="mm:4866d8b1-8cf7-48f5-8183-a644bde6ebfc"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSDependency" xmi:id="mm:011998f3-5832-48d5-a38b-12e4eb2d416f" metaid="mm:d1b9d3c3-dbf9-4a0b-8ad2-73df64c2cabe" geometry="x=404;y=530" order="22">
+      <data tag="controlpoints" value="p0=(444.91,571.50);p1=(364.00,489.21)"/>
+      <data tag="sourceId" value="mm:4866d8b1-8cf7-48f5-8183-a644bde6ebfc"/>
+      <data tag="targetId" value="mm:4bd1f1fc-52e0-4f28-8766-11bb89fdc97d"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:fbcea2a0-13ce-4e3a-a8e9-dd371c3bae7f" metaid="mm:a1eb114a-72b6-4f36-9ba3-adf0de3101be" geometry="x=409;y=261" order="23">
+      <data tag="controlpoints" value="p0=(386.00,262.00);p1=(433.00,262.00)"/>
+      <data tag="sourceId" value="mm:cbd47623-951a-4c6a-8c1b-2c6bca3af36a"/>
+      <data tag="targetId" value="mm:0192c057-c3bd-42d6-aae0-2a2e407990cf"/>
+     </line>
+     <line vcode="VRelationship" rstype="RSAssociation" xmi:id="mm:1b87a07f-ab9b-4075-9a6a-3904a5e14ca0" metaid="mm:4d4a4803-d060-4f7d-90d2-fd201a83c60a" geometry="x=634;y=354" order="24">
+      <data tag="controlpoints" value="p0=(554.52,300.50);p1=(714.50,408.50)"/>
+      <data tag="sourceId" value="mm:0192c057-c3bd-42d6-aae0-2a2e407990cf"/>
+      <data tag="targetId" value="mm:5487d55d-b37e-4ee0-8098-9e72a9fef5a5"/>
+     </line>
+    </lines>
+   </diagram>
+  </visualContainer>
+ </xmi:Extension>
+</xmi:XMI>
