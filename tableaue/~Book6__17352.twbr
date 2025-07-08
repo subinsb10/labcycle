@@ -1,0 +1,1286 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' inline='true' name='federated.1bdgp6c1yuana313xcgm50j0l0oa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' name='textscan.0td856015ksqxw1fpz4o60r9f21c'>
+            <connection class='textscan' directory='C:/Users/user1/Documents/cs-24/tableau_correct -data' filename='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0td856015ksqxw1fpz4o60r9f21c' name='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv' table='[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=';'>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='ISO' ordinal='2' />
+            <column datatype='string' name='Disaster Group' ordinal='3' />
+            <column datatype='string' name='Disaster Subroup' ordinal='4' />
+            <column datatype='string' name='Disaster Type' ordinal='5' />
+            <column datatype='string' name='Disaster Subtype' ordinal='6' />
+            <column datatype='integer' name='Total Events' ordinal='7' />
+            <column datatype='integer' name='Total Affected' ordinal='8' />
+            <column datatype='integer' name='Total Deaths' ordinal='9' />
+            <column datatype='integer' name='Total Damage (USD, original)' ordinal='10' />
+            <column datatype='integer' name='Total Damage (USD, adjusted)' ordinal='11' />
+            <column datatype='string' name='CPI' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISO]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>ISO</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disaster Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disaster Group]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Disaster Group</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disaster Subroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disaster Subroup]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Disaster Subroup</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disaster Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disaster Type]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Disaster Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disaster Subtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Disaster Subtype]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Disaster Subtype</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Events]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Total Events</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Affected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Affected]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Total Affected</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Damage (USD, original)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Damage (USD, original)]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Total Damage (USD, original)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Damage (USD, adjusted)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Damage (USD, adjusted)]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>Total Damage (USD, adjusted)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CPI]</local-name>
+            <parent-name>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv]</parent-name>
+            <remote-alias>CPI</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Damage (USD, original)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Events]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv' datatype='table' name='[__tableau_internal_object_id__].[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]' role='measure' type='quantitative' />
+      <column-instance column='[Total Affected]' derivation='Sum' name='[sum:Total Affected:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Damage (USD, original)]' derivation='Sum' name='[sum:Total Damage (USD, original):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Events]' derivation='Sum' name='[sum:Total Events:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1bft4ov0nxkslj1f5qzg70sdfvzy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/30/2025 06:09:41 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>139</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>254</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ISO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ISO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ISO</remote-alias>
+              <ordinal>2</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>254</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disaster Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Disaster Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disaster Group</remote-alias>
+              <ordinal>3</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disaster Subroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Disaster Subroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disaster Subroup</remote-alias>
+              <ordinal>4</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disaster Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Disaster Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disaster Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disaster Subtype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Disaster Subtype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disaster Subtype</remote-alias>
+              <ordinal>6</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Events</remote-alias>
+              <ordinal>7</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Affected</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Affected]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Affected</remote-alias>
+              <ordinal>8</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1963</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Deaths</remote-alias>
+              <ordinal>9</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>496</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Damage (USD, original)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Damage (USD, original)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Damage (USD, original)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>952</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Damage (USD, adjusted)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Damage (USD, adjusted)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Damage (USD, adjusted)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2680</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPI</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CPI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPI</remote-alias>
+              <ordinal>12</ordinal>
+              <family>_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AdhocCluster:2:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AdhocCluster:3:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{04696b8b-affe-4845-9683-5a0d78825461}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Damage (USD, original):qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Events:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>2</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{aa97964f-9344-46b8-8f28-8bc3190a752d}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>4</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{fb000955-4eb7-4764-aafc-697691fe2907}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Damage (USD, original):qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+            <field name='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Events:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>10</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv' id='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv_FE08D12EA5CE4AAA9FE3E90DE0FCAA72'>
+            <properties context=''>
+              <relation connection='textscan.0td856015ksqxw1fpz4o60r9f21c' name='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06.csv' table='[_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=';'>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='ISO' ordinal='2' />
+                  <column datatype='string' name='Disaster Group' ordinal='3' />
+                  <column datatype='string' name='Disaster Subroup' ordinal='4' />
+                  <column datatype='string' name='Disaster Type' ordinal='5' />
+                  <column datatype='string' name='Disaster Subtype' ordinal='6' />
+                  <column datatype='integer' name='Total Events' ordinal='7' />
+                  <column datatype='integer' name='Total Affected' ordinal='8' />
+                  <column datatype='integer' name='Total Deaths' ordinal='9' />
+                  <column datatype='integer' name='Total Damage (USD, original)' ordinal='10' />
+                  <column datatype='integer' name='Total Damage (USD, adjusted)' ordinal='11' />
+                  <column datatype='string' name='CPI' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1 b'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Heat map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' name='federated.1bdgp6c1yuana313xcgm50j0l0oa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bdgp6c1yuana313xcgm50j0l0oa'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Affected]' derivation='Sum' name='[sum:Total Affected:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' included-values='in-range'>
+            <min>3</min>
+            <max>3321127099</max>
+          </filter>
+          <slices>
+            <column>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]' field-type='quantitative' max='23359689.763648704' min='-12684103.335812261' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]' field-type='quantitative' max='10682187.341360305' min='-6618832.9596730135' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <encodings>
+              <text column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <encoding attr='density-color' palette='red_green_diverging_10_0' type='interpolated' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]</rows>
+        <cols>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1C50C7F4-069E-408D-9D31-28A50897F00F}' />
+    </worksheet>
+    <worksheet name='Sheet 1 c'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Clustering&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' name='federated.1bdgp6c1yuana313xcgm50j0l0oa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bdgp6c1yuana313xcgm50j0l0oa'>
+            <column auto-hidden='true' caption='Clusters (1)' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:2]' parent-model='[AnalyticModel:{fb000955-4eb7-4764-aafc-697691fe2907}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Damage (USD, original)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Events]' role='measure' type='quantitative' />
+            <column-instance column='[AdhocCluster:2]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Affected]' derivation='Sum' name='[sum:Total Affected:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Damage (USD, original)]' derivation='Sum' name='[sum:Total Damage (USD, original):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Events]' derivation='Sum' name='[sum:Total Events:qk]' pivot='key' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:2:ok]' type='palette'>
+                  <map to='#499894'>
+                    <bucket>9</bucket>
+                  </map>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>0</bucket>
+                  </map>
+                  <map to='#86bcb6'>
+                    <bucket>10</bucket>
+                  </map>
+                  <map to='#8cd17d'>
+                    <bucket>6</bucket>
+                  </map>
+                  <map to='#b6992d'>
+                    <bucket>7</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#f1ce63'>
+                    <bucket>8</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                  <map to='#ffbe7d'>
+                    <bucket>4</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]' field-type='quantitative' max='5693795.4924207684' min='-12654002.547917554' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]' field-type='quantitative' max='11727726.236608194' min='2920783.3740963154' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <encodings>
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Events:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Damage (USD, original):qk]' />
+              <text column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:AdhocCluster:2:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]</rows>
+        <cols>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BC8EF9D6-8A15-4B2A-B005-2B59A3614232}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' name='federated.1bdgp6c1yuana313xcgm50j0l0oa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bdgp6c1yuana313xcgm50j0l0oa'>
+            <column auto-hidden='true' caption='Clusters (2)' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:3]' parent-model='[AnalyticModel:{aa97964f-9344-46b8-8f28-8bc3190a752d}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Total Affected]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[AdhocCluster:3]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:3:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Affected]' derivation='Sum' name='[sum:Total Affected:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:3:ok]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#9c755f'>
+                    <bucket>9</bucket>
+                  </map>
+                  <map to='#b07aa1'>
+                    <bucket>7</bucket>
+                  </map>
+                  <map to='#bab0ac'>
+                    <bucket>0</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#edc948'>
+                    <bucket>6</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                  <map to='#ff9da7'>
+                    <bucket>8</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]' field-type='quantitative' max='26508520.004240289' min='-12644745.590546768' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]' field-type='quantitative' max='12585955.046766549' min='-8410522.5302493162' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:AdhocCluster:3:ok]' />
+              <size column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Affected:qk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.7016575336456299' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]</rows>
+        <cols>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{22559FC0-B129-4F02-9498-5F9530702E47}' />
+    </worksheet>
+    <worksheet name='Sheet a'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Map&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='_EmergencyEventsDatabase-CountryProfiles_emdat-country-profiles_2023_04_06' name='federated.1bdgp6c1yuana313xcgm50j0l0oa' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bdgp6c1yuana313xcgm50j0l0oa'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Total Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Deaths]' derivation='Sum' name='[sum:Total Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' />
+              <lod column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' />
+              <geometry column='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Latitude (generated)]</rows>
+        <cols>[federated.1bdgp6c1yuana313xcgm50j0l0oa].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{55795920-FCD7-49C2-9EE9-EE1FE3EE8F8F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='98130' id='5' type-v2='layout-basic' w='89702' x='468' y='935' />
+            <zone fixed-size='160' h='98130' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='935'>
+              <zone h='69391' id='8' name='Sheet a' pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' type-v2='color' w='9362' x='90170' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28739' id='10' name='Sheet 1 c' pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:AdhocCluster:2:ok]' type-v2='color' w='9362' x='90170' y='70326'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='48832' id='3' name='Sheet a' w='42422' x='2692' y='5023' />
+        <zone h='48949' id='9' name='Sheet 1 c' w='42774' x='45875' y='4089' />
+        <zone h='43575' id='11' name='Sheet 1 b' w='84903' x='2341' y='53621' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='15' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='280' h='48949' id='9' is-fixed='true' name='Sheet 1 c' w='42774' x='45875' y='4089'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='28739' id='10' name='Sheet 1 c' pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:AdhocCluster:2:ok]' type-v2='color' w='9362' x='90170' y='70326'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48832' id='3' is-fixed='true' name='Sheet a' w='42422' x='2692' y='5023'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='69391' id='8' name='Sheet a' pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' type-v2='color' w='9362' x='90170' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43575' id='11' is-fixed='true' name='Sheet 1 b' w='84903' x='2341' y='53621'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{878B8586-02C4-469B-93C1-0DD89E27D862}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3646EC68-C753-4B2D-8669-DE0A61D17EDB}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 c'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='16' />
+      </viewpoint>
+      <simple-id uuid='{7F22ED32-80F0-4B05-8E65-D86A9702ED06}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4FDEB1F1-476F-48FE-8503-B7D02DEB46EF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1 b'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 1 c'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet a'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A3C38B34-6175-48C4-A6B6-344EE7696CE7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[none:AdhocCluster:3:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.1bdgp6c1yuana313xcgm50j0l0oa].[sum:Total Deaths:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{D0F96397-6927-4634-8DC0-193BB79241D7}' />
+    </window>
+  </windows>
+</workbook>
